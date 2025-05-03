@@ -12,7 +12,6 @@ int main() {
   printf("Enter amount of trials and doors (trials doors): ");
   scanf("%d %d", &trials, &doors);
 
-  //Debug
   printf("\nTrials: %d\n", trials);
   printf("Doors: %d\n", doors);
 
