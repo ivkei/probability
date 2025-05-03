@@ -5,9 +5,18 @@
 int main() {
   srand(time(NULL));
 
-  const int TRIALS = 1000000;
-  const int DOORS = 3;
+  //Request values
+  int trials = 1000000;
+  int doors = 3;
 
+  printf("Enter amount of trials and doors (trials doors): ");
+  scanf("%d %d", &trials, &doors);
+
+  //Debug
+  printf("\nTrials: %d\n", trials);
+  printf("Doors: %d\n", doors);
+
+  //Counters
   int stayWins = 0;
   int switchWins = 0;
 
@@ -16,9 +25,9 @@ int main() {
   int initGuess;
   int didGuess;
 
-  for (int i = 0; i < TRIALS; ++i){
-    doorWithCar = rand() % DOORS;
-    initGuess = rand() % DOORS;
+  for (int i = 0; i < trials; ++i){
+    doorWithCar = rand() % doors;
+    initGuess = rand() % doors;
 
     didGuess = initGuess == doorWithCar;
 
@@ -29,8 +38,8 @@ int main() {
     switchWins += !didGuess;
   }
 
-  printf("Without switching, win rate is %f\n", (float)stayWins / TRIALS);
-  printf("With switching, win rate is %f\n", (float)switchWins / TRIALS);
+  printf("\nWithout switching, win rate is %f\n", (float)stayWins / trials);
+  printf("With switching, win rate is %f\n", (float)switchWins / trials);
 
   return 0;
 }
