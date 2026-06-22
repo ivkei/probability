@@ -1,6 +1,6 @@
 # Probability
 This repository is intended to prove a simple math probability problem.  
-Probably everyone heard about a problem of winning in the Monty Hall problem by switching doors.  
+Probably, everyone heard about a problem of winning, a.k.a. the Monty Hall dilemma, by switching doors on a TV show.  
 But it seems wrong at first, so I decided to write a simple C code to prove it.  
 
 ## Problem
