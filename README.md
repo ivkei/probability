@@ -31,7 +31,7 @@ And even if 2 pieces of evidence from above dont convince you, just consider thi
 - Initially, chances are of you choosing a car is 1/3, and in the rest 2/3, they are - well - 2/3.  
 - After host reveals a goat in that 2/3 of a right guess section, the section stays 2/3, but now with only 1 door.  
 
-## Build yourself
+## Build It Yourself
 * Via gcc:
 ```sh
 gcc main.c -o prob
